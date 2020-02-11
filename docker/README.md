@@ -12,3 +12,8 @@ kangthink/docker-sample:latest
 ```
 $ docker logs [OPTIONS] CONTAINER
  ```
+
+#### 새로 생성되는 로그를 관찰할 때
+```
+$ docker logs -f CONTAINER
+ ```
