@@ -24,9 +24,39 @@ $ alias k='kubectl'
 
 ## 조회
 
-### node 조회하고 싶을 떄
+### get
 ```
-$ k get no
-$ k get node
-$ k get nodes
+# pod, replicaset, deployment, service 조회
+kubectl get all
+
+# node 조회
+kubectl get no
+kubectl get node
+kubectl get nodes
+
+# pod 조회
+kubectl get po
+kubectl get pod
+
+
+# 결과 포멧 변경
+kubectl get nodes -o wide
+kubectl get nodes -o yaml
+kubectl get nodes -o json
+kubectl get nodes -o json |
+      jq ".items[] | {name:.metadata.name} + .status.capacity"
+```
+
+### describe
+```
+# kubectl describe type/name
+# kubectl describe type name
+kubectl describe node <node name>
+kubectl describe node/<node name>
+```
+
+### log
+```
+kubectl logs NAME
+kubectl logs -f NAME
 ```
