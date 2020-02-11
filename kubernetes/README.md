@@ -60,3 +60,8 @@ kubectl describe node/<node name>
 kubectl logs NAME
 kubectl logs -f NAME
 ```
+
+## 삭제
+```
+kubectl delete NAME
+```
