@@ -22,7 +22,7 @@ $ alias k='kubectl'
 
 
 
-## 살펴보기
+## 관찰
 
 ### get
 ```
