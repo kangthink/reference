@@ -47,4 +47,5 @@ $ sudo chmod 777 FILE -R
 ## ownership
 ```
 $ sudo chown -R USER FILE
+$ sudo shgrp -R GROUPNAME FILE
 ```
